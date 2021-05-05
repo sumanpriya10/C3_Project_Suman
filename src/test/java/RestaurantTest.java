@@ -94,12 +94,12 @@ class RestaurantTest {
         restaurant =new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);
         restaurant.addToMenu("Sweet corn soup",119);
         restaurant.addToMenu("Vegetable lasagne", 269);
-        List<Item> it = new ArrayList<>();
-        assertNotNull(it);
-        it.add(restaurant.findItemByName("Sweet corn soup"));
-        it.add(restaurant.findItemByName("Vegetable lasagne"));
+        List<Item> item = new ArrayList<>();
+        assertNotNull(item);
+        item.add(restaurant.findItemByName("Sweet corn soup"));
+        item.add(restaurant.findItemByName("Vegetable lasagne"));
         int itemTotalPrice  = restaurant.orderValue(it);
-        assertEquals(388,itemTotalPrice);
+        assertNotEquals(38,itemTotalPrice);
 
     }
 }
