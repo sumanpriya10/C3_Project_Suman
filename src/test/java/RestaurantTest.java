@@ -99,7 +99,7 @@ class RestaurantTest {
         item.add(restaurant.findItemByName("Sweet corn soup"));
         item.add(restaurant.findItemByName("Vegetable lasagne"));
         int itemTotalPrice  = restaurant.orderValue(it);
-        assertNotEquals(38,itemTotalPrice);
+        assertEquals(388,itemTotalPrice);
 
     }
 }
